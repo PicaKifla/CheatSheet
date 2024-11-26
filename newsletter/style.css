@@ -1,0 +1,99 @@
+html, body{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(198, 33%, 94%);
+    color: hsl(218, 21%, 36%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.newsletter{
+    width: 600px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+}
+
+.newsletter_I{
+    background: linear-gradient(to right, rgba(255, 124, 110, .77),  rgba(245, 49, 127, .8)),
+    url(img/abstract.jpg) center center;
+    background-size: cover;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.newsletter_I .headline{
+    font-size: 1.5rem;
+    line-height: 1.35;
+
+}
+
+.newsletter_content{
+    padding: 2rem;
+}
+
+.newsletter_headline{
+    font-size: 1.125rem;
+    line-height: 1.35;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.newsletter_form{
+    text-align: center;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, .13);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1),
+                0 2px 4px -1px rgba(0, 0, 0, .13);
+}
+.newsletter_form input{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+.email_input{
+    display: block;
+    width: 100%;
+}
+
+.email_submit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: hsl(336, 77%, 51%);
+    color: #fff;
+    transition: background-color 200ms linear;
+    width: 200px;
+
+}
+
+.email_submit:hover{
+    background-color: hsl(6, 100%, 72%);
+}
+
+.disclaimer{
+    font-size: 14px;
+    display: block;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+    color: hsl(214, 25%, 75%);
+}

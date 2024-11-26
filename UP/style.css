@@ -1,0 +1,346 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    transition: ease-in-out 250ms;
+}
+
+:root {
+    --min-margin: 10px;
+    --max-margin: 25px;
+}
+
+body {
+    margin: 0;
+    /* background-color: #000; */
+}
+.ucenici {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 70px;
+}
+.ISB {
+    color: #f0c419;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: default;
+    text-transform: capitalize;
+    margin: 0;
+}
+.cardsU {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    gap: 25px;
+}
+.cards {
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    /* gap: 50px; */
+    /* max-width: 1440px; */
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    padding: 25px 23px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 25px 10px;
+    border-radius: 15px;
+    background: #f9e7a3;
+}
+.card .img {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-image: url(placeholder.jpg);
+    background-color: lightgray;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.smth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.IVSB {
+    color: #000;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 26px;
+    font-style: normal;
+    margin: 0;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+.body {
+    max-width: 349px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: default;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 250ms ease-in-out;
+    border: 1px solid #000;
+    border-radius: 15px;
+    z-index: 999;
+    background-color: #f9e7a3;
+    width: 500px;
+    max-width: 80%;
+}
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+.modal-header .modal-title {
+    color: #000;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 26px;
+    font-style: normal;
+    margin: 0;
+    cursor: default;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 26px;
+    font-weight: 600;
+}
+.modal-body {
+    padding: 10px 15px;
+    cursor: default;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.vise {
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: #000;
+    display: flex;
+    width: 191px;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+}
+.vise:hover {
+    border-radius: 50px;
+    border: 3px solid #000;
+    background: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 15px 50px;
+    width: 191px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
+}
+.vise:active {
+    border-radius: 50px;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #000;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 191px;
+    height: 50px;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
+}
+.vise::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+.vise::after:hover {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 250ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* Header 4 */
+    font-family: "Baloo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 76.923% */
+    text-transform: capitalize;
+}
+.header img {
+    height: 75px;
+    width: auto;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    margin-left: clamp(var(--min-margin), 20px, var(--max-margin));
+    margin-right: clamp(var(--min-margin), 20px, var(--max-margin));
+    position: relative;
+    padding-bottom: 2px;
+}
+.srch input {
+    color: black;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2.6px solid black;
+    border-radius: 99px;
+    height: 40px;
+    width: 250px;
+    padding: 10px;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f0c419;
+    box-shadow:
+    0px 0px 5px #f0c419,
+    0px 0px 15px #f0c419,
+    0px 0px 25px #f0c419,
+    0px 0px 40px #f0c419
+;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+    box-shadow:
+    0px 0px 5px #f0c419,
+    0px 0px 15px #f0c419,
+    0px 0px 25px #f0c419,
+    0px 0px 40px #f0c419
+;
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.srch button i{
+    font-size: 20px;
+}
+.srch button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}

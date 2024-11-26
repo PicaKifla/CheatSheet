@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440px, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Saf</title>
+  </head>
+  <body>
+
+
+    <script>
+      function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    <style>
+      .show {display:block;}
+    </style>
+
+    <header>
+      <div class="I">
+        <img src="img/Frame.png" alt="" />
+        <div class="I-I">
+          <input type="text" id="search" placeholder="Search" />
+          <img src="img/Frame 3.png" alt="" />
+        </div>
+      </div>
+      <nav>
+        <a href="#">Naslovna</a><a href="#">Konkursi</a><a href="#">Galerija</a
+        ><a href="#">O Nama </a>
+        <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="I">Vremeplov</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="111" height="2" viewBox="0 0 111 2" fill="none">
+            <path d="M1 1H110" stroke="#E31F2C" stroke-linecap="round"/>
+          </svg>
+          <a href="#" class="II">Nagrade</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="111" height="2" viewBox="0 0 111 2" fill="none">
+            <path d="M1 1H110" stroke="#E31F2C" stroke-linecap="round"/>
+          </svg>
+          <a href="#" class="III">Naš tim</a>
+        </div>
+      </div>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="herotxt">
+        <h1>Tajna skrivena u sekundi</h1>
+        <h2>
+          Otkrijte tajne o animaciji. Kako da animacija izgleda realističnije?
+          Saznajte preko naše škole
+        </h2>
+      </div>
+      <button>Saznaj više</button>
+    </div>
+
+    <div class="vesti">
+      <h1>VESTI</h1>
+      <div class="card">
+        <div class="I">
+          <div class="I">
+            <h1>Konkurs za učestvovanje na FESTIVALU animacije</h1>
+            <h2>
+              Festival “Zlatni puž” je Svetski festval dečijeg animiranog filma
+              koji se održava u septembru 2023. Godine u Vranju, Srbija. “Zlatni
+              puž” okuplja mlade filmske stvaraoce iz celog sveta. Svaki studio,
+              klub ili škola koji rade sa decom u oblasti filmske animacije
+              dobrodošli su na naš festival. Filmove moraju snimati DECA, a ne
+              profesionalci za decu. <br />  <br /> 
+              <!-- alt + 0160-->
+            </h2>
+            <div class="b">
+              <button>Pročitaj više</button>
+              <img src="img/Frame (1).png" alt="" />
+            </div>
+          </div>
+          <img src="img/Rectangle 4.png" alt="" />
+        </div>
+        <div class="II">
+          <h1>Upis novih članova ŠAF-a</h1>
+          <h2>
+            Škola animiranog filma Vranje upisivaće nove članove u subotu,
+            05.05.2023. u prostorijama ŠAF-a u Domu kulture.
+          </h2>
+          <button>Pročitaj više</button>
+        </div>
+        <div class="III">
+          <div class="I">
+            <h1>Likovni konkurs Zimske čarolije</h1>
+            <h2>
+              Javna Ustanova Škola animiranog filma organizuje „Likovni konkurs“
+              za decu osnovnih škola sa teritorije grada Vranja. Učešće na
+              konkursu podrazumeva i selekciju za Zimsku dečiju radionicu
+              animiranog filma koja će se održati tokom trajanja zimskog
+              raspusta. Nagradiće se radovi u dve kategorije: učenici do
+              četvrtog razreda i učenici od petog do osmog razreda. Interesantni
+              likovni radovi će biti iskorišćeni kao ideje za realizaciju
+              animiranog filma ili GIF-a.
+            </h2>
+            <button>Pročitaj više</button>
+          </div>
+          <div class="II">
+            <img src="img/Rectangle 4 (1).png" alt="" />
+          </div>
+        </div>
+      </div>
+      <button class="rb">Učitaj više</button>
+    </div>
+
+    <div class="NR">
+        <div class="I">
+            <h1>Nagrađeni rad</h1>
+            <h2> na festivalu animiranog filma “Zlatni puž” - Sima Malušić, 14 godina, Vranje</h2>
+            <button>Pročitaj više</button>
+        </div>
+        <div class="II">
+            <img src="img/Frame (2).png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="kontakt">
+            <h2>Kontakt podaci</h2>
+            <div><img src="img/ph_house-fill.png" alt=""><h1 class="d">Javna ustanova škola animiranog filma, ju šaf – Vranje, 17501, ul. Heroja sa Košara br.1, Srbija</h1></div>
+            <div><img src="img/solar_phone-bold (1).png" alt=""><h1>Direktor, tel-faks: +381 (0)17 432-022</h1></div>
+            <div><img src="img/solar_phone-bold (1).png" alt=""><h1>Studio, tel: +381 (0)17 400-024</h1></div>
+        </div>
+        <div class="navigacija">
+            <h1>Navigacija</h1>
+            <h2>Naslovna</h2>
+            <h2>Konkursi</h2>
+            <h2>Galerija</h2>
+            <h2>O Nama</h2>
+        </div>
+        <div class="mreze">
+            <h1>Društvene mreže</h1>
+            <img src="img/Frame 22.png" alt="">
+        </div>
+    </footer>
+  </body>
+</html>
+

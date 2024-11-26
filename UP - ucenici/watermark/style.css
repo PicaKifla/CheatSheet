@@ -1,0 +1,21 @@
+.wㅤaㅤtㅤeㅤrㅤmㅤaㅤrㅤk {
+    text-align: center;
+    position: fixed;
+    letter-spacing: -0.9em;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    font-family: "baloo 2";
+    font-weight: bolder;
+    transform: translate(-50%, -50%);
+    font-size: 7em; 
+    color: rgb(255, 0, 0, 0.7); 
+    pointer-events: none; 
+    user-select: none; 
+    z-index: 9999; 
+    opacity: 0; 
+    transition: opacity 2s; 
+}
+.wㅤaㅤtㅤeㅤrㅤmㅤaㅤrㅤk.show {
+    opacity: 1; 
+}

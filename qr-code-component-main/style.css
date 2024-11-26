@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: var(--color-slate-300, #D5E1EF);
+}
+.card{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    box-sizing: border-box;
+    transform: translate(-50%, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px 16px 40px 16px;
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+    max-width: 320px;
+    max-height: 499px;
+}
+.txt{
+    padding: 0px 16px;
+}
+img{
+    border-radius: 10px;
+    height: 288px;
+    width: 288px;
+}
+h1{
+    color:  #1F314F;
+    text-align: center;
+    margin-bottom: 16px;
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* text-preset-1 */
+    font-family: Outfit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+p{
+    color:  #68778D;
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* text-preset-2 */
+font-family: Outfit;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 21px */
+letter-spacing: 0.2px;
+}

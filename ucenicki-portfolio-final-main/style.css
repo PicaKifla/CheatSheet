@@ -1,0 +1,1690 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    transition: ease-in-out 250ms;
+    scrollbar-width: none;
+
+}
+
+:root {
+    --min-margin: 10px;
+    --max-margin: 25px;
+}
+
+body {
+    margin: 0;
+    /* background-color: #000; */
+}
+
+#heroU{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -121px;
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.50) 100%), url(rear-view-of-teenage-students-raising-hands-in-classroom-transformed\ 1.png);
+    width: auto;
+    height: calc(100vh + 50px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-duration: 500ms;
+}
+.herotxt{
+    color: #F0C419;
+text-align: right;
+font-feature-settings: 'liga' off, 'clig' off;
+white-space: pre-wrap;
+text-align: center;
+align-self: center;
+/* margin-top: -120px; */
+justify-self: center;
+/* Hero M */
+cursor: default;
+font-family: "Baloo 2";
+font-size: 80px;
+font-style: normal;
+font-weight: 500;
+line-height: 80px; /* 25% */
+text-transform: capitalize;
+animation-duration: 500ms;
+}
+
+
+.header > #nav-check{
+    display: none;
+}
+.ucenici {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 70px;
+}
+.ISB {
+    color: #f0c419;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: default;
+    text-transform: capitalize;
+    margin: 0;
+}
+.cardsU {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    gap: 25px;
+}
+.cards {
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    /* gap: 50px; */
+    /* max-width: 1440px; */
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    padding: 25px 23px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 25px 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background: #f9e7a3;
+}
+.card .img {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-image: url(placeholder.jpg);
+    background-color: lightgray;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#c1 .img{
+    background-image: url(ucenici/1\ Bartović\ Matea.jfif);
+}
+#c2 .img{
+    background-image: url(ucenici/2\ Bašić\ Palković\ Zoran.jfif);
+}
+#c2 .img:hover{
+    animation: spin 0.5s forwards;
+    background-image: url(ucenici/IMG-ac9e737e9b952c1b0e39bb9ec9bc4391-V.jpg);
+}
+
+#c3 .img{
+    background-image: url(ucenici/3Burazin\ Leo.jfif);
+}
+#c4 .img{
+    background-image: url(ucenici/4Vukov\ Jasmina.jfif);
+}
+#c5 .img{
+    background-image: url(ucenici/5\ Gligorić\ Sofija.jfif);
+}
+#c6 .img{
+    background-image: url(ucenici/6\ Grekša\ Strahinja.jfif);
+}
+#c6 .img:hover{
+    animation: spin 0.5s forwards;
+    background-image: url(ucenici/oie_IOMN3ulchSdj.jpg);
+}
+#c7 .img{
+    background-image: url(ucenici/7\ Dulić\ Ružica.jfif);
+}
+#c8 .img{
+    background-image: url(ucenici/8\ Đurić\ Strahinja.jfif);
+}
+#c9 .img{
+    background-image: url(ucenici/9\ Zaimi\ Sara.jfif);
+}
+#c10 .img{
+    background-image: url(ucenici/10\ Ilijevski\ Elena.jfif);
+}
+#c11 .img{
+    background-image: url(ucenici/11\ Jahiri\ Severđan.jfif);
+}
+#c12 .img{
+    background-image: url(ucenici/12\ Kovljenić\ Danilo.jfif);
+}
+#c13 .img{
+    background-image: url(ucenici/13\ Kostić\ Teodora.jfif);
+}
+#c14 .img{
+    background-image: url(ucenici/14\ Kuntić\ Saša.jfif);
+}
+#c15 .img{
+    background-image: url(ucenici/15\ Malinović\ Ognjen.jfif);
+}
+#c16 .img{
+    background-image: url(ucenici/16\ Mamužić\ Dane.jfif);
+}
+#c17 .img{
+    background-image: url(ucenici/17\ Maravić\ Mihajlo.jfif);
+}
+#c18 .img{
+    background-image: url(ucenici/18\ Marković\ Lana.jfif);
+}
+#c19 .img{
+    background-image: url(ucenici/19\ Mihajlović\ Mate.jfif);
+}
+#c19 .img:hover{
+    animation: spin 0.5s forwards;
+    background-image: url(ucenici/oie_X1ftUJDeXr8P.jpg);
+}
+#c20 .img{
+    background-image: url(ucenici/20\ Milenković\ Srđan.jfif);
+}
+#c21 .img{
+    background-image: url(ucenici/21\ Mihaljev\ Vukašin.jfif);
+}
+#c22 .img{
+    background-image: url(ucenici/22\ Nadarević\ Aleksandar.jfif);
+}
+#c23 .img{
+    background-image: url(ucenici/23\ Nikolić\ Veljko.jfif);
+}
+#c24 .img{
+    background-image: url(ucenici/24\ Oljuz\ Milica.jfif);
+}
+#c25 .img{
+    background-image: url(ucenici/25Penzeš\ Filip.jfif);
+}
+#c26 .img{
+    background-image: url(ucenici/26\ Popović\ Nina.jfif);
+}
+#c27 .img{
+    background-image: url(ucenici/27\ Radulović\ Luna.jfif);
+}
+#c28 .img{
+    background-image: url(ucenici/28\ Rakočević\ Cvijanov\ Lazar.jfif);
+}
+#c29 .img{
+    background-image: url(ucenici/29\ Savić\ Nikolina.jfif);
+}
+#c30 .img{
+    background-image: url(ucenici/30\ Topić\ Milica.jfif);
+}
+#c31 .img{
+    background-image: url(ucenici/31\ Triznja\ Benjamin.jfif);
+}
+#c32 .img{
+    background-image: url(ucenici/32\ Čik\ Srđan.jfif);
+}
+#c33 .img{
+    background-image: url(ucenici/33\ Čović\ Milan.jfif);
+}
+#c34 .img{
+    background-image: url(ucenici/34\ Šalja\ Darko.jfif);
+}
+
+.smth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.IVSB {
+    color: #000;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 26px;
+    font-style: normal;
+    margin: 0;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+.body {
+    max-width: 349px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: default;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 250ms ease-in-out;
+    border: 1px solid #000;
+    border-radius: 15px;
+    z-index: 999;
+    background-color: #f9e7a3;
+    width: 500px;
+    max-width: 80%;
+}
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+.modal-header .modal-title {
+    color: #000;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 26px;
+    font-style: normal;
+    margin: 0;
+    cursor: default;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 26px;
+    font-weight: 600;
+}
+.modal-body {
+    padding: 10px 15px;
+    cursor: default;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.vise {
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: #000;
+    display: flex;
+    width: 191px;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+}
+.vise:hover {
+    border-radius: 50px;
+    border: 3px solid #000;
+    background: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 15px 50px;
+    width: 191px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
+}
+.vise:active {
+    border-radius: 50px;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #000;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 191px;
+    height: 50px;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
+}
+.vise::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+.vise::after:hover {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 250ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.1);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* Header 4 */
+    font-family: "Baloo 2";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 76.923% */
+    text-transform: capitalize;
+}
+.header img {
+    height: 75px;
+    width: auto;
+}
+.HH {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    margin-left: clamp(var(--min-margin), 20px, var(--max-margin));
+    margin-right: clamp(var(--min-margin), 20px, var(--max-margin));
+    position: relative;
+    padding-bottom: 2px;
+}
+.srch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.srch input {
+    color: black;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: transparent;
+    border-right: none;
+    background: rgba(255, 255, 255, 0.20);
+    border-top: 2.6px solid black;
+    border-left: 2.6px solid black;
+    border-bottom: 2.6px solid black;
+    border-radius: 99px 0px 0px 99px;
+    height: 40px;
+    width: 210px;
+    padding: 10px;
+    position: relative;
+}
+.srch input::placeholder{
+    color: #000;
+}
+.srch input:focus{
+    outline: none;
+}
+
+.HH::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fffb00;
+    box-shadow:
+    0px 0px 5px #fffb00,
+    0px 0px 15px #f0ec19,
+    0px 0px 25px #f0ec19,
+    0px 0px 40px #f0ec19;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+.HH:hover::after {
+    box-shadow:
+    0px 0px 5px #f0ec19,
+    0px 0px 15px #f0ec19,
+    0px 0px 25px #f0ec19,
+    0px 0px 40px #f0ec19;
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+
+
+
+.srch button i{
+    font-size: 20px;
+    padding: 7px;
+}
+.srch button{
+    border-top: 2.6px solid black;
+    border-right: 2.6px solid black;
+    background: rgba(255, 255, 255, 0.20);
+    border-bottom: 2.6px solid black;
+    border-radius: 0px 99px 99px 0px;
+    border-left: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.highlight {
+    background-color: yellow;
+}
+
+#search-results{
+    position: absolute;
+    top: 72px;
+    right: 25px;
+    width: auto;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.4);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+}
+
+#search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#search-results li {
+    padding: 10px;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Baloo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: default;
+    line-height: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#search-results li:last-child {
+    border-bottom: none;
+}
+
+#search-results a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#search-results a:hover {
+    color: #000000;
+}
+#nav-check {
+    display: none;
+}
+.leFadeIn span { animation-name: leFadeIn }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.FI{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+
+}
+hr{
+    color: black;
+    border: 1px solid black;
+    background-color: black;
+    display: block;
+    height: 1px;
+    margin: 15px;
+    width: 20.97vw;
+}
+.footer{
+    margin: 100px 20px 50px 20px ;
+}
+
+.footer .FI .fa-brands{
+    font-size: 40px;
+    color: #FCC10A;
+}
+.FI{
+    margin-bottom: 50px;
+}
+
+.SS{
+    width: 38px;
+    color: transparent;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin: 0;
+}
+.FO{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.FII{
+    overflow: hidden;
+color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-family: "Baloo 2";
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 108.696% */
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.FIII{
+    color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+background-color: rgba(255, 255, 255, 0);
+/* Header 4 */
+font-family: "Baloo 2";
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 76.923% */
+text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.wㅤaㅤtㅤeㅤrㅤmㅤaㅤrㅤk {
+    text-align: center;
+    position: fixed;
+    letter-spacing: -0.9em;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    font-family: "baloo 2";
+    font-weight: bolder;
+    transform: translate(-50%, -50%);
+    font-size: 7em; 
+    color: rgb(255, 0, 0, 0.7); 
+    pointer-events: none; 
+    user-select: none; 
+    z-index: 9999; 
+    opacity: 0; 
+    transition: opacity 2s; 
+}
+.wㅤaㅤtㅤeㅤrㅤmㅤaㅤrㅤk.show {
+    opacity: 1; 
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* End at 360 degrees */
+    }
+}
+
+@keyframes rspin {
+    from {
+        transform: rotate(360deg); /* Start at 0 degrees */
+    }
+    to {
+        transform: rotate(0deg); /* End at 360 degrees */
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .nav-btn{
+        display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 0.2rem;
+    }
+    .nav-btn > label{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        height: 0;
+        transition: all 0.3s ease-in;
+        top: 40px;
+        left: 0;
+        overflow: hidden;
+      }
+      .nav > li {
+        width: 100%;
+        margin-top: 1.5rem;
+      }
+      #nav-check:checked ~ .nav {
+        height: calc(100vh - 50px);
+      }
+      .FIII{
+        display: none;
+      }
+      .FII{
+        overflow: hidden;
+color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-family: "Baloo 2";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 107.143% */
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px ;
+      }
+}
+
+/* break */
+
+
+#heroP{
+    width: auto;
+    height: calc(100vh + 50px);
+    margin-top: -120px;
+    background-image: url(img/POZADINSKA-SLIKA.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+}
+
+.hero-tekst h1{
+    margin: 0;
+}
+
+.hero-tekst h1{
+    font-family: "Baloo 2";
+    font-size: 31px;
+    font-weight: 500;
+    padding-left: 88px;
+    padding-top: 60px;
+}
+
+.hero-tekst p{
+    font-family: "Baloo 2";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 26px 0px 60px 0px;
+    padding-left: 88px;
+    
+}
+
+.hero-tekst{
+    width: 740px;
+    height: 349px;
+    border-radius: 60px 0px 0px 60px;
+    background: #FCC10A;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* padding-top: 280px; */
+}
+
+.tekst1 h1{
+    font-family: "Baloo 2";
+    font-size: 31px;
+    font-weight: 700; 
+    margin-top: 61px; 
+}
+
+.tekst1 p{
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-weight: 400;   
+    line-height: 25px; 
+    margin: 0;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.tekst1{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0px 5vw;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.kartica1 h2{
+    font-family: "Baloo 2";
+    font-size: 26px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #FCC10A;
+    padding-top: 40px;
+}
+
+.kartica2 h2{
+    font-family: "Baloo 2";
+    font-size: 26px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #FCC10A;
+    padding-top: 40px;
+}
+
+.kartica1 h3{
+    font-family: "Baloo 2";
+    font-size: 26px;
+    line-height: 20px;
+    font-weight: 600;
+    display: flex;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #FCC10A;
+}
+.kartica1 h3:hover{
+    background-color: transparent;
+border: 3px solid #FFDC1F;
+color: #FFF;
+max-height: 50px;
+box-sizing: border-box;
+}
+
+
+
+.kartica2 h3{
+    font-family: "Baloo 2";
+    font-size: 26px;
+    line-height: 20px;
+    font-weight: 600;
+    display: flex;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #FCC10A;
+}
+.kartica2 h3:hover{
+    background-color: transparent;
+border: 3px solid #FFDC1F;
+max-height: 50px;
+box-sizing: border-box;
+}
+.kartica2 h3:hover > a{
+color: #FFF;
+}
+.kartica1 p{
+    font-family: "Baloo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.kartica2 p{
+    font-family: "Baloo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.kartica1{
+    display: flex;
+    width: 407px;
+    padding: 25px 23px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background-color: #000;
+}
+
+.kartica2{
+    display: flex;
+    width: 407px;
+    padding: 25px 23px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background-color: #000;
+}
+
+.kartice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9vw;
+}
+
+
+.opis h1{
+    font-family: "Baloo 2";
+    font-size: 31px;
+    font-weight: 700; 
+    padding-top: 40px;
+
+    margin-top: 0px; 
+}
+
+.opis p{
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-weight: 400;   
+    line-height: 25px; 
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: 0;
+    padding-bottom: 40px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.opis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1080px;
+    border-radius: 30px 0px;
+    border: 5px solid #FCC10A;
+}
+
+.ceo-opis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 117px
+}
+
+.baner{
+width: 100vw;
+height: 834px;
+box-sizing: border-box;
+color: #FCC10A;
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Baloo 2";
+font-size: 80px;
+font-style: normal;
+font-weight: 500;
+line-height: 80px;
+}
+
+.baner{
+    background-image: url(img/wp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.baner p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 260px;
+}
+
+.ceo-baner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 157px;
+}
+
+.ikonice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+    padding-top: 50px;
+}
+
+.logotip{
+display: flex;
+align-items: center;
+gap: 11px;
+}
+
+.tekstt{
+font-family: "Baloo 2";
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px;
+}
+
+.ceo-logotip{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+    padding-top: 38px;
+    padding-bottom: 50px;
+}
+
+.nav img{
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+.kartice{
+    flex-direction: column;
+}
+}
+@media only screen and (max-width: 800px) {
+    .hero-tekst{
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.hero-tekst p{
+    font-size: 21px ;
+
+}
+.hero-tekst h1{
+    font-size: 26px;
+}
+}
+
+
+/* break */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.hero nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    flex-direction: column;
+}
+.hero nav h1{
+    color: #FCC10A;
+    text-wrap: wrap;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 80px; /* 100% */
+    margin: 0;
+}
+.hero nav p{
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 35px;
+    font-weight: 500;
+    text-wrap: wrap;
+    line-height: 150%; /* 200% */
+    margin: 0%;
+    /* width: 858px; */
+}
+.wireframe{
+    background-image: url(slike/1.jpg) ;
+    background-size: cover;
+    width: 100vw;
+    height: 438px;
+}
+.design{
+    background-image: url(slike/2.jpg) ;
+    background-size: cover;
+    width: 100vw;
+    height: 438px;
+}
+.program{
+    background-image: url(slike/3.jpg) ;
+    background-size: cover;
+    width: 100vw;
+    height: 438px;
+}
+svg{
+    min-width: 100px;
+    min-height: 100px;
+}
+.test{
+    background-image: url(slike/4.jpg) ;
+    background-size: cover;
+    width: 100vw;
+    height: 438px;
+}
+.alati{
+    background-image: url(slike/background.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 1800px;
+    
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+.alati > *{
+    transform: translateX(-100px);
+}
+.alati h2{
+    color: #FCC10A;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 80px;
+    margin-left: 200px;
+    font-style: normal;
+    margin-bottom: -22px;
+    margin-top: 112px;
+    text-wrap: nowrap;
+    font-weight: 800;
+    line-height: 80px; /* 100% */
+}
+.alati h1{
+    color: #FCC10A;
+    text-align: center;
+    font-family: "Baloo 2";
+    font-size: 37px;
+    font-weight: 600;
+    margin: 0;
+}
+.alati p{
+    color: #000;
+    text-align: center;
+    font-family: "Baloo 2";
+    font-size: 31px;
+    font-weight: 400;
+    margin: 0;
+    max-width: 711px;
+}
+.alati nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+.illustrator{
+    margin-left: 450px;
+}
+.visual {
+    margin-left: 450px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .hero nav p{
+        font-size: 24px;
+        line-height: 200%;
+    }
+    .alati p{
+        font-size: 24px;
+    }
+
+    .alati nav{
+        gap: 4vw;
+    }
+    
+    }
+
+@media only screen and (max-width:1100px){
+    .alati nav{
+        margin-left: 150px;
+    }
+
+}
+@media only screen and (max-width:600px){
+    #alatiH p{
+        display: none;
+    }
+    .alati p{
+        display: none;
+    }
+    .alati nav{
+        max-width: 500px;
+        justify-content: space-between;
+    }
+    .alati h1{
+        min-width: 200px;
+    }
+    .alati{
+        height: 1500px;
+    }
+    
+}
+
+/* break */
+
+h1.hero{
+    display: flex;
+    height: 684px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(img/slika1.jpg) lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+    color: #FFF;
+text-align: center;
+font-family: "Baloo 2";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.idefk{
+    width: 90vw;
+    align-self: center;
+    justify-self: center;
+    margin-top: 60px;
+    border: 1px solid #FCC10A;
+}
+.idefkI{
+    width: 90vw;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 60px;
+    border: 1px solid #FCC10A;
+}
+main.text{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    text-wrap: wrap;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color: #000;
+text-align: center;
+font-family: "Baloo 2";
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+main.text p{
+    max-width: 1220px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 50px 40px;
+}
+img.slika{
+    width: 100vw;
+    height: auto;
+
+}
+nav.kartica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 15px;
+border: 5px solid #FCC10A;
+max-width: 410px;
+box-sizing: border-box;
+max-height: 550px;
+
+}
+.heromq{
+    display: none;
+}
+.karticaimg1{
+    width: 350px;
+    height: 150px;
+
+}
+.karticaimg1 img{
+    border-radius: 15px;
+    border: 3px solid #FCC10A;
+}
+
+.karticaimg2 img{
+    border-radius: 15px;
+    border: 3px solid #FCC10A;
+}
+.kartica h1{
+    color: #000;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Baloo 2";
+font-size: 26px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 76.923% */
+}
+.kartica p{
+    color: rgba(0, 0, 0, 0.70);
+text-align: center;
+font-family: "Baloo 2";
+font-size: 20px;
+margin: 0;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 40px;
+}
+.kartica button{
+    color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Baloo 2";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 83.333% */
+padding: 15px 50px;
+background-color: #FCC10A;
+border-radius: 50px;
+box-sizing: border-box;
+border: none;
+}
+.kartica button:hover{
+    border: 3px solid #FCC10A;
+    max-height: 50px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+.kartica button:active{
+    border: 3px solid #FCC10A;
+    background-color: transparent;
+    background: rgba(240, 196, 25, 0.20);
+    box-sizing: border-box;
+}
+@media only screen and (max-width:600px){
+    h1.hero{
+        display: none;
+    }
+    h1.heromq{
+        display: flex;
+        height: 684px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(img/slika1.jpg) lightgray 50% / cover no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -100px;
+        color: #FFF;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+    font-family: "Baloo 2";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+}
+
+/* break */
+
+
+#kontakt-hero{
+    display: flex;
+    height: 630px;
+    margin-top: -110px;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(slike/pozadina\ final.png);
+}
+
+#kontakt-hero h1{
+    color: #F0C419;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 40% */   
+}
+
+.kontakt{
+    display: flex;
+    padding: 100px 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-self: stretch;
+    background: rgba(252, 193, 10, 0.80);
+}
+
+.levo{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.levo input{
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 90.909% */
+    display: flex;
+    min-width: 300px;
+    max-width: 500px;
+    height: 65px;
+    padding: 15px 0px 15px 15px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #FFF;
+}
+
+
+
+input, textarea {
+width: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-size: 16px;
+}
+textarea {
+    height: 150px;
+    resize: none;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 90.909% */
+
+}
+
+/* .veliki_input input
+.veliki_input textarea {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+}
+
+.veliki_input li input[type=text],
+.veliki_input li textarea {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: none;
+}
+
+.veliki_input li textarea {
+    height: 150px;
+    resize: none;
+} */
+
+.veliki_input input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.levo button{
+    display: flex;
+    width: 191px;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #000;
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
+    cursor: pointer;
+}
+
+.levo button:hover{
+    background-color: #FFF;
+    color: #000;
+    transition-duration: 0.4s;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
+    cursor: pointer;
+}
+
+
+
+.desno{
+    display: flex;
+    width: 500px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: #000;
+}
+
+.desno h3{
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 66.667% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.desno p{
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 90.909% */
+}
+
+.telefon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.e-mail{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.adresa{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lokacija{
+    display: flex;
+    padding: 100px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tekst_lokacija{
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Baloo 2";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 50% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lokacija iframe{
+    width: 73vw;
+    height: 550px;
+    border-radius: 20px;
+    outline: 3px solid #000;
+}
+
+@media only screen and (max-width:600px){
+    .levo > input, textarea{
+        min-width: 300px;
+        max-width: 400px;
+    }
+    .levo input{
+        min-width: 300px;
+        max-width: 400px;
+    }
+}

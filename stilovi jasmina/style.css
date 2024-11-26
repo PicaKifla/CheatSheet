@@ -1,0 +1,172 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+font-family: "Baloo 2";
+}
+.hero{
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    background-image: url(img/slika1.jpg);
+    background-size: cover;
+    height: 684px;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    width: 1226px;
+    border-color: #FCC10A;
+    margin: 60px 0;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1226px;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+img{
+    width: 1440px;
+    height: auto;
+}
+.kartice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 222px;
+    margin: 60px 0;
+}
+.kartica{
+    display: flex;
+    width: 407px;
+    padding: 25px 23px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 5px solid #FCC10A;
+    gap: 40px;
+}
+.kartica h1{
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 20px; /* 76.923% */
+    margin: 0;
+}
+.kartica p{
+    color: rgba(0, 0, 0, 0.70);
+    width: 347px;
+    height: 160px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.kartica button{
+    display: flex;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #FCC10A;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
+    border: none;
+    margin: 60px 0 0 0;
+}
+/* .kartica button:hover{
+    cursor: pointer;
+        border: 1px solid #000;
+} */
+.karticaimg1{
+    width: 349px;
+    height: 152px;
+    border-radius: 15px;
+    border: 3px solid #FCC10A;
+    background-image: url(img/kartica1.png);
+    background-size: cover;
+}
+.karticaimg2{
+    width: 349px;
+    height: 152px;
+    border-radius: 15px;
+    border: 3px solid #FCC10A;
+    background-image: url(img/kartica2.png);
+    background-size: cover;
+}
+.heromq{
+    display: none;
+}
+@media only screen and (max-width: 440px) {
+
+}
+@media only screen and (max-width: 440px) {
+    .hero{
+    display: none;
+    }
+    .heromq{
+            color: #FFF;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+            background-image: url(img/slika1.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            width: 440px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    hr{
+        width: 322px;
+    }
+    .text{
+        width: 322px;
+    }
+    img{
+        height: auto;
+        width: 440px;
+    }
+    .kartice{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .kartica{
+        padding: 25px 0;
+    }
+    .kartica h1{
+        color: #FCC10A;
+        font-size: 19px;
+    }
+    .kartica p{
+        font-size: 14px;
+        color: #000;
+        height: auto;
+        width: auto;
+    }
+    .kartica button{
+        display: flex;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 0;
+    }
+}

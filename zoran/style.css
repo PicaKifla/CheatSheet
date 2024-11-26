@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+body{
+    margin: 0;
+    padding: 15px 10px;
+    background: #a9cab1;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 73px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+    max-width: 1440px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.card .I{
+    border-radius: 15px;
+    background: #FCFFF9;
+    display: flex;
+height: 85px;
+box-sizing: border-box;
+width: 99%;
+padding: 10px;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+.card .I h1{
+    color: #6C9E64;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Lalezar;
+font-size: calc(max(26px, 3.33vw));
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.card .II{
+    display: flex;
+padding: 20px;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+box-sizing: border-box;
+border-radius: 5px;
+background: #6C9E64;
+width: 99%;
+align-items: stretch;
+align-content: flex-start;
+gap: 13.89%;
+}
+.card .II .ll{
+    display: flex;
+    width: 641px;
+    flex-direction: column;
+    align-items: center;
+}
+.card .II .ll h2{
+    color: #FFF;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Itim;
+font-size: calc(max(16px, 2.22vw));
+font-style: normal;
+font-weight: 400;
+padding-bottom: 51px;
+line-height: normal;
+}
+.card .II .ll h3{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Itim;
+    width: 80px;
+    font-size: calc(max(18px, 2.5vw));
+    padding-bottom: 10px;
+    font-style: normal;
+    text-wrap: nowrap;
+    font-weight: 400;
+    line-height: normal;
+}
+.card .II .ll h4{
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Itim;
+width: 80px;
+font-size: calc(max(14px, 1.67vw));
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.card .II .l img{
+filter: drop-shadow(4px 12px 4px rgba(0, 0, 0, 0.25));
+width: 13.06vw;
+min-width: 100px;
+height: auto;
+}
+.card .II .l{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+@media screen and (min-width: 1440px) {
+    .card .I h1{
+        font-size: 48px;
+    }
+    .card .II .ll h2{
+        font-size: 32px;
+    }
+    .card .II .ll h3{
+    font-size: 36px;
+    }
+    .card .II .ll h4{
+    font-size: 24px;
+    }
+  }

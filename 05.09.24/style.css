@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scrollbar-width: none;
+  color: #03045e;
+  font-family: Inter;
+  font-style: normal;
+  line-height: normal;
+}
+
+i {
+  font-size: 24px;
+}
+h1 {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: #03045e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card {
+  display: flex;
+  /* align-items: center; */
+  width: 100vw;
+  flex-direction: column;
+  gap: 25px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.cardI {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 35px 100px;
+  background-color: #caf0f8;
+  border-radius: 15px;
+  max-width: 700px;
+  position: relative;
+  left: 15.2777778%;
+}
+.cardI .I h2 {
+  color: #03045e;
+  font-family: Inter;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 500px;
+}
+.cardI .II {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.cardI .II .h h2 {
+  color: #03045e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cardI .II .h h3 {
+  color: #03045e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardI .icon .l {
+  position: absolute;
+  bottom: 23.47px;
+  right: 127.6px;
+}
+.cardII {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 35px 100px;
+  background-color: #caf0f8;
+  border-radius: 15px;
+  max-width: 700px;
+  position: relative;
+  left: calc(84.7222222% - 700px);
+}
+
+.cardII .I h2 {
+  color: #03045e;
+  font-family: Inter;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardII .II .h h2 {
+  color: #03045e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cardII .II .h h3 {
+  color: #03045e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardII .II {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.cardII .II .h {
+  text-align: right;
+}
+.cardII .icon .ll {
+  position: absolute;
+  left: 7px;
+  bottom: 58.97px;
+}
+.cardII .icon .l {
+  position: absolute;
+  left: 186px;
+  bottom: 16.07px;
+}
+.cardIII {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 35px 100px;
+  background-color: #caf0f8;
+  border-radius: 15px;
+  max-width: 700px;
+  position: relative;
+  left: 15.2777778%;
+}
+.cardIII .I h2 {
+  color: #03045e;
+  font-family: Inter;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 500px;
+}
+.cardIII .II {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.cardIII .II .h h2 {
+  color: #03045e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cardIII .II .h h3 {
+  color: #03045e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardIII .icon .ll {
+  position: absolute;
+  bottom: 28.43px;
+  right: 198.72px;
+}
+.cardIII .icon .lll {
+  position: absolute;
+  right: 26.67px;
+  bottom: 69.66px;
+}
+.cardIII .icon .l {
+  position: absolute;
+  top: 30px;
+  left: 17px;
+}
+.cardIV {
+  max-width: 700px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 35px 100px;
+  background-color: #caf0f8;
+  border-radius: 15px;
+  position: relative;
+  left: calc(84.7222222% - 700px);
+}
+
+.cardIV .I h2 {
+  color: #03045e;
+  font-family: Inter;
+  max-width: 500px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardIV .II .h h2 {
+  color: #03045e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cardIV .II .h h3 {
+  color: #03045e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cardIV .II {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.cardIV .II .h {
+  text-align: right;
+}
+.cardIV .icon .l {
+  position: absolute;
+  left: 7px;
+  bottom: 58.97px;
+}
+.cardIV .icon .ll {
+  position: absolute;
+  left: 186px;
+  bottom: 16.07px;
+}
+@media only screen and (max-width: 1000px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardI,
+  .cardIII {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 35px 100px;
+    background-color: #caf0f8;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .cardII,
+  .cardIV {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 35px 100px;
+    background-color: #caf0f8;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cardI,
+  .cardII,
+  .cardIII,
+  .cardIV {
+    padding: 35px 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cardI,
+  .cardII,
+  .cardIII,
+  .cardIV {
+    padding: 35px 20px;
+  }
+}

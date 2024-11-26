@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans";
+
+}
+body ::-webkit-scrollbar{
+    scrollbar-width: none;
+    display: none;
+}
+
+.header{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgba(0, 168, 232, 0.35);
+background: rgba(0, 168, 232, 0.15);
+backdrop-filter: blur(3px);
+}
+.header img{
+    width: auto;
+height: 65px;
+}
+.header .nav{
+    color: #00171F;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+display: flex;
+width: 52vw;
+justify-content: space-between;
+align-items: stretch;
+}
+.header .nav a{
+    text-decoration: none;
+color: #00171F;
+transition: all 1000ms;
+}
+.header .nav a:hover{
+    transition: all 200ms;
+    color: #007EA7;
+    filter: drop-shadow(2px 2px 4px #00bfff);
+}
+.srch{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+max-width: 250px;
+height: 50px;
+border: 3px solid #007EA7;
+align-items: center;
+
+}
+.srch input{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    min-width: 100px;
+    height: 50px;
+    border: none;
+    background-color:transparent;
+    font-size: 18px;
+}
+.srch input:focus{
+    outline: none;
+}
+.srch .fa-solid{
+    font-size: 30px;
+    color: #007EA7;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sekcija{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    box-sizing: border-box;
+    background: rgba(0, 168, 232, 0.20);
+
+}
+.sekcija h1{
+    color: #00171F;
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+max-width: 500px;
+}
+.sekcija .I{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    gap: 7vw;
+
+}
+.sekcija .I img{
+    width: auto;
+height: 195px;
+}
+.sekcija .I .levo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    max-width: 604px;
+
+}
+.sekcija .I .levo p{
+    color: #00171F;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+align-self: stretch;
+
+}
+
+.akcija{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    gap: 7vw;
+}
+.akcija .I{
+    box-sizing: border-box;
+    padding: 20px;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+border: 3px solid rgba(0, 52, 89, 0.20);
+background: #00A8E8;
+box-shadow: 2px 2px 8px 0px rgba(79, 79, 79, 0.20);
+color: #00171F;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+cursor: pointer;
+line-height: normal;
+transition: all 200ms;
+scale: 100%;
+}
+.akcija .I:hover{
+    transition: all 200ms;
+    scale: 105%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 183, 255, 1);
+
+}
+
+.akcija .II{
+    color: #00171F;
+font-family: "Josefin Sans";
+font-size: 20px;
+cursor: pointer;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 20px;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+border: 3px solid rgba(0, 52, 89, 0.20);
+background: #007EA7;
+box-shadow: 2px 2px 8px 0px rgba(79, 79, 79, 0.25);
+transition: all 200ms;
+scale: 100%;
+}
+.akcija .II:hover{
+    transition: all 200ms;
+scale: 105%;
+box-shadow: 0px 0px 15px 0px rgba(0, 183, 255, 1);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    background: rgba(0, 52, 89, 0.75);
+}
+.footer .I{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.footer .I hr{
+    width: 17.5vw;
+    border: none;
+    color: #00171F;
+    background: #00171F;
+    border: 1px solid #00171F;
+}
+.footer .I .fa-brands{
+    width: auto;
+font-size: 50px;
+cursor: pointer;
+transition: all 1000ms;
+color: #00171F;
+}
+.footer .I .fa-brands:hover{
+    color: #00A8E8;
+    filter: drop-shadow(0px 0px 8px #00b7ff);
+    transition: all 300ms;
+}
+.footer .II{
+    display: flex;
+align-items: center;
+gap: 150px;
+align-items: center;
+justify-content: center;
+
+}
+.footer .II img{
+    width: auto;
+height: 65px;
+}
+.footer .II .desno{
+    display: flex;
+max-width: 279px;
+flex-direction: column;
+align-items: flex-start;
+gap: 53px;
+}
+.mail{
+    display: flex;
+align-items: center;
+gap: 30px;
+align-self: stretch;
+}
+.mail h2{
+    width: 60px;
+    color: #000;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.mail h3{
+    color: #000;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.tel h2{
+    width: 60px;
+    color: #000;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.tel h3{
+    color: #000;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.tel{
+    display: flex;
+align-items: center;
+gap: 30px;
+}
+.burger-menu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 950px){
+    * ::-webkit-scrollbar{
+        scrollbar-width: none;
+        display: none;
+    }
+    .sekcija .I{
+        flex-direction: column;
+    }
+    .header{
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .header .nav{
+        display: none;
+    }
+    .header .srch{
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+        position: fixed;
+        top: 33px;
+        right: 40px;
+        cursor: pointer;
+
+    }
+    
+    .burger-menu .fa-bars{
+        color: #003459;
+        font-size: 40px;
+    }
+
+
+}
+
+@media only screen and (max-width: 550px){
+    .footer .II{
+        gap: 50px;
+    }
+    .footer .I{
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .footer .II{
+        flex-direction: column;
+    }
+}

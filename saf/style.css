@@ -1,0 +1,734 @@
+html {
+    width: 1440px;
+    display: table;
+    margin: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: table-cell;
+
+    vertical-align: middle;
+    overflow-x: hidden;
+}
+
+
+header{
+position: absolute;
+z-index: 999;
+width: 100%;
+padding: 25px 100px;
+box-sizing: border-box;
+
+}
+
+.I{
+    display: flex;
+    align-items: center;
+    max-width: 1240px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.I-I{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+}
+
+header input{
+    background-image: url(img/fluent_search-28-regular.png);
+    background-repeat: no-repeat;
+  background-position: 232px ;
+  background-size: 25px;
+    width: 267px;
+    box-sizing: border-box;
+    display: flex;
+padding: 5px 15px;
+justify-content: center;
+align-items: center;
+gap: 150px;
+border-radius: 30px;
+color:#E31F2C ;
+border: 1px solid #E31F2C;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+header ::placeholder{
+    color: #E31F2C;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+nav{
+    display: flex;
+align-items: flex-start;
+gap: 45px;
+    margin-top: 30px;
+
+}
+
+nav a{
+    display: flex;
+align-items: flex-start;
+    color: black;
+    text-decoration: none;
+    color: #000;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+nav a:hover{
+    color: #E31F2C;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #E31F2C;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* dropdown start */
+.dropbtn{
+    background: url(img/Vector.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    margin-left: -35px;
+    margin-top: 0px;
+    background-color: #fff;
+    display: table-cell;
+    align-items: center;
+    justify-content: center ;
+    padding: 0px 15px ;
+    cursor: pointer;
+    border: none;
+    height: 20px;
+    width: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    height: 160px;
+    min-width: 126px;
+    max-width: 126px;
+    margin-left: -131px;
+    z-index: 998;
+  }
+
+  .dropdown-content svg{
+    margin-left: -2px;
+  }
+
+  .dropdown-content a {
+    color: #000000;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+margin-bottom: 5px;
+margin-top: 5px;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+display: block;
+  }
+
+  .dropdown-content a:hover {
+    color: #E31F2C;
+  }
+  .show {display:block;}
+
+  /* dropdown end  */
+.hero{
+    margin-top: 170px;
+    background-image: url(img/Frame\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 419px;
+
+    gap: 50px;
+    display: flex;
+max-width: 1440px;
+padding: 0px 100px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+
+}
+
+.herotxt{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 25px;
+}
+
+.hero h1{
+    margin: 0;
+    color: #FFF;
+font-family: "Josefin Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+button{
+    margin: 0;
+    width: 169px;
+    height: 42px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-wrap: nowrap;
+}
+
+.hero h2{
+    margin: 0;
+    color: #FFF;
+font-family: "Josefin Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 484px;
+}
+:hover{
+    transition: 0.3s;
+}
+.hero button{
+    display: flex;
+padding: 10px 20px;
+justify-content: center;
+cursor: pointer;
+align-items: center;
+gap: 10px;
+border-radius: 30px;
+border: 1px solid #FFF;
+color: #FFF;
+background-color: transparent;
+font-family: "Josefin Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.hero button:hover{
+    color: #E31F2C;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    display: inline-flex;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 30px;
+background: #FFF;
+}
+
+.vesti{
+    display: flex;
+max-width: 1440px;
+width: 100vw;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 35px;
+}
+
+.vesti h1{
+    color: #E31F2C;
+font-family: "Josefin Sans";
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+margin: 45px 0px 0px 0px ;
+line-height: normal;
+}
+
+.card{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+max-width: 1050px;
+gap: 60px;
+}
+
+.card .I .I{
+    display: flex;
+padding: 50px 50px 40px 50px;
+flex-direction: column;
+align-items: flex-start;
+/* gap: 20px; */
+border-radius: 50px 0px 0px 50px;
+background: #E31F2C;
+/* height: 385px; */
+}
+
+.card .I .I h1{
+    color: #fff;
+    margin: 0;
+font-family: "Josefin Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.card .I .I h2{
+    margin: 25px 0px 0px 0px;
+    color: #FFF;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 600px;
+/* height:160px ; */
+}
+
+.card .I .I .b{
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+
+.card .I .I .b img{
+    width: 98.6px;
+height: 65px;
+}
+
+.card .I .I .b button{
+    display: flex;
+    cursor: pointer;
+    width: 169px;
+    height: 42px;
+    box-sizing: border-box;
+    text-wrap: nowrap;
+padding: 10px 25px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 50px;
+border: 1px solid #FFF;
+color: #FFF;
+font-family: "Josefin Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background-color:transparent;
+}
+
+.card .I .I .b button:hover{
+    display: inline-flex;
+padding: 10px 25px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 50px;
+background: #FFF;
+color: #E31F2C;
+font-family: "Josefin Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.card .II{
+    background-image: url(img/Frame\ 110.png);
+    display: flex;
+width: 1050px;
+box-sizing: border-box;
+padding: 50px 50px 40px 50px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 50px;
+background-repeat: no-repeat;
+
+}
+
+.card .II h1{
+    color: #FFF;
+font-family: "Josefin Sans";
+font-size: 24px;
+font-style: normal;
+margin: 0;
+font-weight: 700;
+line-height: normal;
+}
+
+.card .II h2{
+    color: #FFF;
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+margin: 25px 0 40px 0;
+font-weight: 400;
+line-height: normal;
+width: 490px;
+}
+
+.card .II button{
+    display: flex;
+    padding: 10px 25px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color:transparent;
+}
+.card .II button:hover{
+    color: #E31F2C;
+font-family: "Josefin Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+display: inline-flex;
+padding: 10px 25px;
+border-radius: 50px;
+background: #FFF;
+justify-content: center;
+align-items: center;
+gap: 10px;
+line-height: normal;
+}
+
+.card .III .II{
+    background-image: none;
+    margin: 0;
+    width: auto;
+
+    padding: 0;
+}
+.card .III{
+    display: flex;
+    gap: 0;
+
+    flex-direction: row;
+}
+.card .III .I{
+    display: flex;
+    padding: 50px 50px 40px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-radius: 50px 0px 0px 50px;
+background: #E31F2C;
+
+}
+
+.card .III .I h1{
+    color: #FFF;
+font-family: "Josefin Sans";
+font-size: 24px;
+margin: 0;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+
+.card .III .I h2{
+    color: #FFF;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+width: 600px;
+margin: 0;
+font-weight: 400;
+line-height: normal;
+}
+
+.card .III .I button{
+    display: flex;
+    padding: 10px 25px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color:transparent;
+}
+.card .III .I button:hover{
+    color: #E31F2C;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-flex;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: #FFF;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    line-height: normal;
+}
+
+
+.vesti .rb{
+    color: #FFF;
+font-family: "Josefin Sans";
+font-size: 24px;
+height: 44px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+padding: 10px 25px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 30px;
+background: #E31F2C;
+border: none;
+margin: 0px 0px 45px 0px;
+}
+.vesti .rb:hover{
+    color: #E31F2C;
+font-family: "Josefin Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: inline-flex;
+padding: 10px 25px;
+justify-content: center;
+align-items: center;
+border-radius: 30px;
+border: 1.5px solid #E31F2C;
+background: #FFF;
+gap: 10px;
+}
+
+.NR{
+    display: flex;
+max-width: 1440px;
+width: 100vw;
+padding: 60px 0px;
+justify-content: center;
+align-items: center;
+gap: 150px;
+background: #E31F2C;
+}
+.NR .I{
+    display: flex;
+flex-direction: column;
+align-items: center;
+width: auto;
+}
+
+.NR .I h1{
+    color: #FFF;
+font-family: "Josefin Sans";
+font-size: 32px;
+font-style: normal;
+margin: 0;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.NR .I h2{
+    color: #FFF;
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 24px;
+font-style: normal;
+margin: 25px 0px 50px 0px;
+width: 464px;
+font-weight: 400;
+line-height: normal;
+}
+
+.NR .I button{
+    display: flex;
+    padding: 10px 25px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color:transparent;
+}
+.NR .I button:hover{
+    color: #E31F2C;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-flex;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: #FFF;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    line-height: normal;
+}
+
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 489px;
+    justify-content: start;
+}
+
+.kontakt h2{
+    color: #E31F2C;
+font-family: "Josefin Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.kontakt div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.kontakt div img{
+    width: 24px;
+    height: 24px;
+}
+
+.kontakt .d{
+    color: #000;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.kontakt h1{
+    color: #000;
+font-family: "Josefin Sans";
+font-size: 20px;
+margin: 0;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.kontakt{
+    gap: 15px;
+}
+
+.navigacija{
+    display: flex;
+    flex-direction: column;
+    width: 179px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigacija h1{
+    color: #E31F2C;
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.navigacija h2{
+    color: #000;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.mreze{
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mreze h1{
+    color: #E31F2C;
+font-family: "Josefin Sans";
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+footer{
+    display: flex;
+    max-width: 1440px;
+    width: 100vw;
+    padding: 30px 100px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+

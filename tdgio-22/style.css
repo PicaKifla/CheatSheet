@@ -1,0 +1,21 @@
+@font-face{
+    font-family: 'Helvetica';
+    src: url(font/Helvetica.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(24.97% 19.6% at 50% 50%, #52B788 0%, rgba(82, 183, 136, 0.00) 100%), radial-gradient(35.52% 17.62% at 50% 50%, #52B788 0%, rgba(116, 198, 157, 0.00) 100%), url(Tara\ 6.jpg) lightgray 50% / cover no-repeat;
+}
+
+

@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+
+body{
+    background-color: #2F3E46;
+}
+.header{
+    padding: 10px 47px;
+    display: flex;
+    align-items: center;
+    background-color: #212B31;
+    justify-content: space-between;
+}
+.header img{
+    width: 75px;
+height: 75px;
+
+}
+.header .nav h1{
+    color: #96C5A0;
+font-family: "Inria Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.header .nav h2{
+    color: #5B7768;
+font-family: "Inria Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.header .nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 36vw;
+}
+
+
+/* codepen */
+
+
+.search {
+	display: inline-block;
+	position: relative;
+	height: 23px;
+	width: 23px;
+	box-sizing: border-box;
+	margin: 0px 8px 7px 0px;
+	padding: 7px 9px 0px 9px;
+	border: 3px solid #96C5A0;
+	border-radius: 25px;
+	transition: all 200ms ease;
+	cursor: text;
+	
+	&:after {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 17px;
+		right: -5px;
+		top: 12px;
+		background: #96C5A0;
+		border-radius: 3px;
+		transform: rotate(-45deg);
+		transition: all 200ms ease;
+	}
+    #inpt_search {
+        position: relative;
+        top: -12px;
+    }
+	
+	&.active,
+	&:hover {
+		width: 200px;
+		margin-right: 0px;
+        height: 30px;
+
+		
+		&:after {
+			height: 0px;	
+		}
+	}
+	
+	input {
+		width: 100%;
+		border: none;
+		box-sizing: border-box;
+		font-family: Helvetica;
+		font-size: 15px;
+		color: inherit;
+		background: transparent;
+		outline-width: 0px;
+	}
+}
+
+
+/* codepen */
+
+
+
+.header .icon{
+    font-size: 28px;
+    display: flex;
+    color: #96C5A0;
+    gap: 40px;
+}
+.burger{
+    display: none;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(47, 62, 70, 0.00) 80%, #2F3E46 100%), url(cinema.png) lightgray 50% / cover no-repeat;
+    color: #CAD2C5;
+    padding: 100px;
+    height: 790px ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.herotext{
+    position: absolute;
+    /* left: 100px; */
+    top: 293px;
+}
+.herotext h1{
+    color: #CAD2C5;
+font-family: "Inria Sans";
+font-size: 96px;
+margin-left: -8px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.herotext p{
+    color: #CAD2C5;
+font-family: "Inria Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+max-width: 695px;
+}
+.camera{
+    position: relative;
+    height: 898px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 15.2777778vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.camera img{
+    width: 100%;
+    min-width: 351px;
+    height: 698px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.popupcam{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 580px;
+    max-width: 61.39vw;
+    min-width: 250px;
+    border-radius: 20px;
+    padding: 211px 103px 109px 103px;
+    background: rgba(40, 53, 60, 0.2);
+}
+.camera img:hover + .popupcam{
+    background: rgba(40, 53, 60, 0.8);
+    transition: all ease-in-out 0.2s;
+}
+.popupcam:hover {
+    background: rgba(40, 53, 60, 0.8);
+    transition: all ease-in-out 0.2s;
+}
+
+.popupcam p{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 24px;
+font-style: normal;
+margin-bottom: 122px;
+font-weight: 400;
+line-height: normal;
+max-width: 390px;
+min-width: 172px;
+}
+.popupcam button{
+    border-radius: 15px;
+    background: #35899300;
+    color: #f5f5f500;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 32px;
+width: 211px;
+box-sizing: border-box;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 5px 20px;
+border: none;
+}
+.camera img:hover + .popupcam button{
+    background: #358993;
+    color: #F5F5F5;
+    transition: all ease-in-out 0.2s;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15.2777778vw 100px 15.2777778vw;
+    
+}
+.popupcam:hover > button{
+    background: #358993;
+    color: #F5F5F5;
+    transition: all ease-in-out 0.2s;
+}
+
+.popupcam button:hover{
+    background: #2CB8C9;
+    color: #F5F5F5;
+    transition: all ease-in-out 0.2s;
+}
+.cards .ID{
+    display: flex;
+    flex-direction: column;
+    /* width: 24.31vw; */
+height: 542px;
+color: #CAD2C5;
+box-sizing: border-box;
+padding: 111px 42.5px 111px 42.5px;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 85%, rgba(0, 0, 0, 0.50) 100%), url(moviebg.png) lightgray -56.505px -1.052px / 116.06% 100% no-repeat;
+box-shadow: 0px -15px 7px 0px rgba(0, 0, 0, 0.25) inset;
+background-size: cover;
+background-position: left center;
+}
+
+.cards .ID button{
+    border-radius: 15px;
+background: #358993;
+display: flex;
+height: 50px;
+padding: 5px 20px;
+justify-content: center;
+align-items: center;
+border: none;
+color: #F5F5F5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 211px;
+box-sizing: border-box;
+}
+.cards .ID button:hover{
+    background: #2CB8C9;
+    transition: all ease-in-out 0.2s;
+}
+.cards .ID p{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+margin: 50px 0px;
+line-height: normal;
+width: 18.40vw;
+min-width: 266px;
+}
+.cards .ID h1{
+    color: #CAD2C5;
+font-family: "Inria Sans";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.cards .IID{
+    display: flex;
+    flex-direction: column;
+height: 542px;
+color: #CAD2C5;
+box-sizing: border-box;
+padding: 111px 42.5px 111px 42.5px;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 15%), url(moviebg.png) lightgray -0.253px -1.269px / 116.143% 100% no-repeat;
+box-shadow: 0px -15px 7px 0px rgba(0, 0, 0, 0.25) inset;
+background-size: cover;
+background-position: right center;
+}
+
+.cards .IID button{
+    border-radius: 15px;
+background: #358993;
+display: flex;
+height: 50px;
+padding: 5px 20px;
+justify-content: center;
+align-items: center;
+border: none;
+color: #F5F5F5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 211px;
+box-sizing: border-box;
+}
+.cards .IID button:hover{
+    background: #2CB8C9;
+    transition: all ease-in-out 0.2s;
+}
+.cards .IID p{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+margin: 50px 0px;
+line-height: normal;
+width: 18.40vw;
+min-width: 266px;
+}
+.cards .IID h1{
+    color: #CAD2C5;
+font-family: "Inria Sans";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.textblock{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 78px;
+    color: #CAD2C5;
+    background: #28353C;
+    padding: 50px 22.22vw;
+}
+.textblock h1{
+    color: #CAD2C5;
+font-family: "Inria Sans";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.textblock p{
+    color: #CAD2C5;
+font-family: "Inria Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+.sponzori{
+    display: flex;
+padding: 100px 25.39vw;
+flex-direction: column;
+justify-content: center;
+background: #253037;
+align-items: center;
+gap: 50px ;
+align-self: stretch;
+}
+
+.sponzori h1{
+    color: #CAD2C5;
+text-align: center;
+text-transform: capitalize;
+font-family: "Inria Sans";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.sponzori .I{
+    width: 49.24vw;
+    display: flex;
+    row-gap: 33.33px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.sponzori .I img{
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #212B31;
+}
+
+.footer .I{
+    display: flex;
+    margin-right: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer .I img{
+    width: 150px;
+    height: 150px;
+}
+.footer .I .II{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 157px;
+    color: #CAD2C5;
+    font-size: 28px;
+}
+.footer .I .II i{
+    cursor: pointer;
+}
+.footer .II{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer .II h1{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 24px;
+margin: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.footer .II p{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 20px;
+font-style: normal;
+margin-bottom: 5px;
+cursor: pointer;
+font-weight: 400;
+line-height: normal;
+}
+.footer .V{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer .V h1{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 24px;
+margin: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.footer .V p{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 20px;
+font-style: normal;
+margin-bottom: 5px;
+cursor: pointer;
+font-weight: 400;
+line-height: normal;
+}
+.footer .III{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer .III h1{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 24px;
+margin: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.footer .III p{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 20px;
+font-style: normal;
+margin-bottom: 5px;
+cursor: pointer;
+font-weight: 400;
+line-height: normal;
+}
+.footer .IV{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer .IV h1{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 24px;
+margin: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.footer .IV p{
+    color: #CAD2C5;
+text-align: center;
+font-family: "Inria Sans";
+font-size: 20px;
+font-style: normal;
+margin-bottom: 5px;
+cursor: pointer;
+font-weight: 400;
+line-height: normal;
+}
+.footertxt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1015px) {
+.popupcam p{
+    margin-bottom: 50px;
+}
+    .cards{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+    }
+}
+@media screen and (max-width:620px){
+        .burger{
+        display: flex;
+
+    }
+    .textblock{
+        padding: 25px;
+    }
+    .sponzori .I{
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav h1, h2{
+        display: none;
+    }
+    .hero{
+        padding: 25px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer .I{
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .footertxt{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:450px){
+    .herotext h1{
+        font-size: 40px;
+        margin-left: -2px;
+    }
+    .herotext p{
+        font-size: 20px;
+    }
+    .sponzori .I img{
+        height: 75px;
+        width: auto;
+    }
+}
+@media screen and (max-width:350px){
+    .header{
+        padding: 10px 20px;
+    }
+}
+

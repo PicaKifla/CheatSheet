@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d15ed592a2.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <img src="logo.png" alt="">
+        <div class="nav">
+        <h1>HOME</h1>
+        <h2>tab</h2>
+        <h2>tab</h2>
+        <h2>tab</h2>
+    </div>
+    <div class="icon">
+        <label class="search" for="inpt_search">
+			<input id="inpt_search" type="text" />
+		</label>
+        <i class="fa-regular fa-heart"></i>
+        <div class="burger">
+        <i class="fa-solid fa-bars""></i>
+    </div>
+</div>
+    </header>
+
+
+    <div class="hero">
+        <div class="herotext">
+        <h1>Festival evropskog filma</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel ipsum vel massa venenatis tristique ut
+            posuere arcu. Cras eu elit ut dolor imperdiet pharetra eget eu urna. Suspendisse potenti. Donec id mi
+            dapibus, imperdiet elit ac, consectetur nibh. Nullam ac ipsum a mi elementum tempor et vel ligula. Sed
+            varius
+        </p>
+    </div>
+    </div>
+
+
+
+    <div class="camera">
+        <img src="camera.png" alt="">
+        <div class="popupcam">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit purus vel elit suscipit,
+                vitae </p>
+            <button class="saznaj-vise">SAZNAJ VIŠE</button>
+        </div>
+    </div>
+
+
+
+    <div class="cards">
+        <div class="ID">
+            <h1>7 dana filma</h1>
+            <p>Ove godine dodatna dva dana za filmofile željne kvalitetnih filmova</p>
+            <button class="saznaj-vise">SAZNAJ VIŠE</button>
+        </div>
+        <div class="IID">
+            <h1>Učesnici</h1>
+            <p>Ovogodišnji učesnici nam dolaye  iz čak 9 zemalja. Zemlja gost je Finska</p>
+            <button class="saznaj-vise">SAZNAJ VIŠE</button>
+        </div>
+    </div>
+
+
+
+    <div class="textblock">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias rerum, mollitia illum asperiores
+            nobis. Beatae at placeat accusantium aspernatur, distinctio itaque dolore impedit a in voluptate doloribus
+            fugiat qui recusandae exercitationem sint veniam mollitia repellendus? Voluptatem vel itaque aliquam
+            possimus impedit sunt tempore error nesciunt, perferendis expedita libero illum!</p>
+    </div>
+
+
+
+    <div class="sponzori">
+        <h1>sponzori</h1>
+        <div class="I">
+            <img src="shuter.png" alt="">
+            <img src="wnet.png" alt="">
+            <img src="illy.png" alt="">
+            <img src="hbo.png" alt="">
+            <img src="wb.png" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="I">
+            <img src="logo.png" alt="">
+            <div class="II">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+        <div class="footertxt">
+        <div class="II">
+            <h1>lorem</h1>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+        <div class="III">
+            <h1>lorem</h1>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+        <div class="IV">
+            <h1>lorem</h1>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+        <div class="V">
+            <h1>lorem</h1>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+        </div>
+    </div>
+
+    <script>
+    $("#inpt_search").on('focus', function () {
+        $(this).parent('label').addClass('active');
+    });
+    
+    $("#inpt_search").on('blur', function () {
+        if($(this).val().length == 0)
+            $(this).parent('label').removeClass('active');
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+@charset "utf-8";
+
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Baloo Thambi 2";
+  font-size: 16px;
+}
+.search-box {
+  transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+  width: 78px;height: 40px;
+  border-radius: 5px;border: none;
+  cursor: pointer;
+  background: rgb(235, 235, 235);
+  & + label .search-icon {    color: black    }
+  &:hover {
+    color: white;
+    background: rgb(200, 200, 200);
+    box-shadow: 0 0 0 5px rgb(61, 71, 82);
+    & + label .search-icon {    color: white    }
+  }
+  &:focus {
+    transition: width 0.6s cubic-bezier(0,1.22,.66,1.39), border-radius 0.6s, background 0.6s;
+    border: none;outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    cursor: text;
+    width: 300px;
+    border-radius: auto;
+    background: rgb(235, 235, 235);
+    color: black;
+    & + label .search-icon {    color: black;    }
+  }
+  &:not(:focus) {    text-indent:-5000px;    }
+}
+
+#search-submit {
+  position: relative;left: -5000px;
+}
+
+.search-icon {
+  position: relative;
+  left: -56px;
+  top: 5px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.header{
+  background-color: #151515;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 40px 12vw 40px 12vw;
+  box-sizing: border-box;
+}
+
+
+.header a{
+  text-decoration: none;
+  color: white ;
+}
+.header a:hover{
+  color: #feed77;
+  text-decoration: none;
+
+}
+
+.nav{
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.clear {
+  clear: both;
+}
+img {
+  max-width: 100%;
+  border: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #e73700;
+}
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+button {
+  outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+
+
+.hero{
+  background-image: url(herobc.jpg);
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.hero h1{
+  color: #FFF;
+font-family: "Fugaz One";
+font-size: 100px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 15px;
+}
+.hero p{
+  color: #FFF;
+font-family: "Baloo Thambi 2";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.hero button{
+  margin-top: 167px;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: #FFF;
+font-family: "Baloo Thambi 2";
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border: none;
+}
+.chomik{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 458px;
+  padding: 0px 52px 0px 52px;
+}
+.chomikI{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  color: white;
+  padding: 61px 40px 61px 40px;
+}
+.gramps{
+  padding: 38px 25px 38px 25px;
+  min-width: 572px;
+
+}
+.gramps img{
+  height: 382px;
+  width: 522px;
+}
+footer{
+  background-color: black;
+  display: flex;
+  color: white;
+  flex-direction: column;
+
+}
+.footerI{
+  display: flex;
+  flex-direction: row;
+  padding: 75px 12vw 45px 12vw;
+
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.footerI .I{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footerI .II{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerI .III{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerI .I img{
+  height: 88px;
+  width: auto;
+}
+.footerI .II img{
+  height: 88px;
+  width: auto;
+}
+.footerI .III img{
+  height: 88px;
+  width: auto;
+}
+.footerII{
+  display: flex;
+  flex-direction: row;
+  padding: 53px 8vw 53px 8vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerII .I{
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+
+}
+.footerII .III{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 46px;
+
+}
+.footerII .III i{
+  font-size: 65px;
+}
+
+.footerI .I h1{
+  font-size: 24px;
+}
+.footerI .II h1{
+  font-size: 24px;
+}
+.footerI .III h1{
+  font-size: 24px;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.prices {
+  padding: 60px 50px;
+}
+.prices .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.prices .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.prices .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.prices .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.prices .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.prices .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.prices .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.prices .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.prices .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  /* -------- Landing page ------- */
+  .prices {
+    padding: 50px 30px;
+  }
+  .prices .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .prices .item.active {
+    width: 400px;
+  }
+  .prices .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .prices {
+    padding: 50px 30px 40px;
+  }
+  .prices .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .prices .item.active {
+    width: 360px;
+  }
+  .prices .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+
+  /* -------- Landing page ------- */
+  .prices {
+    padding: 30px 15px 20px;
+  }
+  .prices .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .prices .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .prices .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+.header .burger i{
+  display: none;
+}
+
+@media only screen and (max-width: 820px) {
+  .header{
+    padding: 40px 5vw 40px 5vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+.header .burger i{
+  /* position: absolute; */
+  /* right: 60px; */
+  display: flex;
+  font-size: 30px;
+  color: white;
+}
+.nav a {
+  display: none;
+}
+.gramps {
+  display: none;
+}
+
+.hero h1{
+  font-size: 36px;
+}
+.hero p{
+  font-size: 20px;
+}
+.hero button{
+  font-size: 24px;
+}
+
+
+}
+
+@media only screen and (max-width: 645px) {
+  form {
+   margin-bottom: -30px;
+  }
+  .footerI .I img{
+    height: 70px;
+    width: auto;
+  }
+  .footerI .II img{
+    height: 70px;
+    width: auto;
+  }
+  .footerI .III img{
+    height: 70px;
+    width: auto;
+  }
+  .footerI .I h1{
+    font-size: 16px;
+  }
+  .footerI .II h1{
+    font-size: 16px;
+  }
+  .footerI .III h1{
+    font-size: 16px;
+  }
+}
